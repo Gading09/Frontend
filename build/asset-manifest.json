@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89cb17c3.chunk.css",
+    "main.js": "/static/js/main.8e4d76f6.chunk.js",
+    "main.js.map": "/static/js/main.8e4d76f6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.061373c5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.061373c5.js.map",
+    "static/js/2.f64420eb.chunk.js": "/static/js/2.f64420eb.chunk.js",
+    "static/js/2.f64420eb.chunk.js.map": "/static/js/2.f64420eb.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.61b4f70d22103dd4413fbea24b305b79.js": "/precache-manifest.61b4f70d22103dd4413fbea24b305b79.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.89cb17c3.chunk.css.map": "/static/css/main.89cb17c3.chunk.css.map",
+    "static/js/2.f64420eb.chunk.js.LICENSE": "/static/js/2.f64420eb.chunk.js.LICENSE",
+    "static/media/coming.css": "/static/media/alam.8eea67eb.jpg",
+    "static/media/background_profile.jpeg": "/static/media/background_profile.ed88b4d9.jpeg",
+    "static/media/nomatch.css": "/static/media/bg.3644ee70.jpg",
+    "static/media/emie.jpeg": "/static/media/emie.d8f8d215.jpeg",
+    "static/media/halal.png": "/static/media/halal.b14a918e.png",
+    "static/media/hedy.png": "/static/media/hedy.de86536c.png",
+    "static/media/home-bg.jpg": "/static/media/home-bg.be70d7dd.jpg",
+    "static/media/images.jpeg": "/static/media/images.92bcb94b.jpeg",
+    "static/media/mie.jpg": "/static/media/mie.9e594899.jpg",
+    "static/media/miee.jpeg": "/static/media/miee.5a52aa1f.jpeg",
+    "static/media/nohalal.png": "/static/media/nohalal.59157e29.png",
+    "static/media/seller.png": "/static/media/seller.9c5fc9cc.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.061373c5.js",
+    "static/js/2.f64420eb.chunk.js",
+    "static/css/main.89cb17c3.chunk.css",
+    "static/js/main.8e4d76f6.chunk.js"
+  ]
+}
