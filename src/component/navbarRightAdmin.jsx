@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 // import "../style/css-final.css";
 import "../style/bootstrap.min.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import Search from './search';
-import { actions, store } from "../store";
+import { actions } from "../store";
 import { withRouter } from "react-router-dom";
 import { connect } from "unistore/react";
-import ModalSignIn from '../component/modalSignIn'
-import ModalSignUp from '../component/modalSignUp'
+// import ModalSignIn from '../component/modalSignIn'
+// import ModalSignUp from '../component/modalSignUp'
 import "../style/navbar.css"
 
 class NavbarRightAdmin extends Component{

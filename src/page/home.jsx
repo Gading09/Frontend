@@ -28,7 +28,7 @@ class Home extends React.Component{
                             <img src={require("../image/seller.png")} alt=""/>
                             <p className="take-seller">Dapatkan penghasilan tambahan dan kembangkan konsumsi sehat di lingkungan Anda</p>
                             <button type="button" class="btn btn-primary header-buttonn1">
-                                <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter2" type='button'>Bergabung menjadi seller sekarang!</a>
+                                <Link to='#' class="nav-link" data-toggle="modal" data-target="#exampleModalCenter2" type='button'>Bergabung menjadi seller sekarang!</Link>
                             </button>
                         </div>
                     </div>

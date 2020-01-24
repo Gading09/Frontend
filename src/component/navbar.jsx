@@ -39,7 +39,7 @@ class Navbar extends Component{
                 <ModalSignIn/>
                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <Link to="/"><a class="navbar-brand navbar-logooo" href="#">E-mie</a></Link>
+                <Link to="/" class="navbar-brand navbar-logooo">E-mie</Link>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -79,7 +79,7 @@ class Navbar extends Component{
                         </li>
                         }
                     <li class="nav-item">
-                        <a className="nav-link">Hello, {username} |</a>
+                        <Link className="nav-link">Hello, {username} |</Link>
                     </li>
                     <li class="nav-item">
                         <Link class="nav-link" onClick={this.postSignout}>Logout</Link>
@@ -87,10 +87,10 @@ class Navbar extends Component{
                     (
                     <React.Fragment>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" type='button'>Login</a>
+                        <Link class="nav-link" data-toggle="modal" data-target="#exampleModalCenter" type='button'>Login</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter1" type='button'>Sign Up</a>
+                        <Link class="nav-link" data-toggle="modal" data-target="#exampleModalCenter1" type='button'>Sign Up</Link>
                     </li></React.Fragment>)
                   }
                   <li class="nav-item">

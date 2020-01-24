@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { actions, store } from "../store";
 import { withRouter } from "react-router-dom";
 import { connect } from "unistore/react";
-import ModalSignIn from '../component/modalSignIn'
-import ModalSignUp from '../component/modalSignUp'
+// import ModalSignIn from '../component/modalSignIn'
+// import ModalSignUp from '../component/modalSignUp'
 import "../style/navbar.css"
 
 class Search extends Component{

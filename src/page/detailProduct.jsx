@@ -8,7 +8,7 @@ import {connect} from 'unistore/react'
 //import style
 import "../style/nomatch.css"
 import Navbar from '../component/navbar';
-import Category from '../component/navbarCategory'
+// import Category from '../component/navbarCategory'
 import Header from '../component/header';
 import '../style/detailProduct.css'
 import axios from 'axios';

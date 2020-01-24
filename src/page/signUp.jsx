@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios'
+// import axios from 'axios'
 import {store,actions} from '../store'
 import {withRouter} from 'react-router-dom'
 import {connect} from 'unistore/react'
@@ -113,7 +113,7 @@ class SignUp extends React.Component{
                             </ul>
                         </div>
                         <div className="col-sm-12">
-                        {this.state.role == "user" ?
+                        {this.state.role === "user" ?
                         (<button type="submit" onClick={() => this.handleRegisterUser()} className="btn btn-primary btn-block" data-dismiss="modal">Sign UP</button>):
                         (<button type="submit" onClick={() => this.handleRegisterAgent()} className="btn btn-primary btn-block" data-dismiss="modal">Sign UP</button>)
                         }

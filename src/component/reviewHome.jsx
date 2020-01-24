@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "../style/bootstrap.min.css";
 import "../style/reviewHome.css"
-import { actions, store } from "../store";
+import { actions } from "../store";
 import { withRouter } from "react-router-dom";
 import { connect } from "unistore/react";
 // import { Link } from "react-router-dom";

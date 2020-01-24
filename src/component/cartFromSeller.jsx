@@ -1,19 +1,19 @@
 import React, {Component} from 'react';
 // import "../style/css-final.css";
 import "../style/bootstrap.min.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import Search from './search';
-import { actions, store } from "../store";
+import { actions } from "../store";
 import { withRouter } from "react-router-dom";
 import { connect } from "unistore/react";
 import "../style/cartFromSeller.css"
-import axios from 'axios';
+// import axios from 'axios';
 import CartFromProduct from './cartFromProduct';
 
 class CartFromSeller extends Component{
     render(){               
         const ProductCart = this.props.ProdukApa.map((pro,key) => {
-            const cart = this.props.cart
+            // const cart = this.props.cart
             console.log("ProductCartAPA",this.props.ProdukApa)
             
             return(

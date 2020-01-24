@@ -1,6 +1,6 @@
 //import plugin
 import React from 'react';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 //import style
 import "../style/nomatch.css"

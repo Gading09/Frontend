@@ -1,5 +1,5 @@
 import createStore from 'unistore';
-import { string } from 'prop-types';
+// import { string } from 'prop-types';
 import axios from 'axios';
 
 const initialState = {
@@ -62,15 +62,11 @@ export const actions = store => ({
         console.log("password",state.userPasswordInput)
         const username = state.userNameInput
         const password = state.userPasswordInput
-        const mydata = {
-            "username": username,
-            "password": password
-        };
         const req = {
             method: "get",
             url: "https://cari-nama-domain-anda.site/login?username="+username+"&password="+password
           };
-          const self = this
+        //   const self = this
           await axios(req)
           .then(function(response){
                 console.log("token === ", response.data.token)
@@ -82,7 +78,7 @@ export const actions = store => ({
                                     is_login : true, 
                                     username : state.userNameInput,
                                     password : state.userPasswordInput})
-                    self.props.history.push("/")              
+                    // self.props.history.push("/")              
                     alert("login success")
                 }
             })
@@ -102,7 +98,7 @@ export const actions = store => ({
               }
           };
           console.log()
-          const self = this
+        //   const self = this
           await axios(req)
           .then(function(response){
                 console.log("id === ", response.data.id)
@@ -115,7 +111,7 @@ export const actions = store => ({
                     localStorage.setItem("email", response.data.email);
                     localStorage.setItem("city", response.data.city);
                     localStorage.setItem("image", response.data.image);
-                    self.props.history.push("/")               
+                    // self.props.history.push("/")               
                     alert("login success")
                 }
             })
@@ -134,7 +130,7 @@ export const actions = store => ({
               }
           };
           console.log()
-          const self = this
+        //   const self = this
           await axios(req)
           .then(function(response){
                 console.log("id === ", response.data.id)
@@ -147,7 +143,7 @@ export const actions = store => ({
                     localStorage.setItem("email", response.data.email);
                     localStorage.setItem("city", response.data.city);
                     localStorage.setItem("image", response.data.image);
-                    self.props.history.push("/")               
+                    // self.props.history.push("/")               
                     alert("login success")
                 }
             })
@@ -166,7 +162,7 @@ export const actions = store => ({
               }
           };
           console.log()
-          const self = this
+        //   const self = this
           await axios(req)
           .then(function(response){
                 console.log("id === ", response.data.id)
@@ -180,7 +176,7 @@ export const actions = store => ({
                     localStorage.setItem("email", response.data.email);
                     localStorage.setItem("city", response.data.city);
                     localStorage.setItem("image", response.data.image);
-                    self.props.history.push("/")               
+                    // self.props.history.push("/")               
                     alert("login success")
                 }
             })
@@ -257,11 +253,11 @@ export const actions = store => ({
           },
           data: mydata
         };
-        const self = this
+        // const self = this
         await axios(req)
         .then(function(response){
             store.setState({token : response.data.token, is_login : true})
-            self.props.history.push("/")               
+            // self.props.history.push("/")               
                 alert("login success")
         })
         .catch(function(error){
@@ -304,11 +300,11 @@ export const actions = store => ({
           },
           data: mydata
         };
-        const self = this
+        // const self = this
         await axios(req)
         .then(function(response){
             store.setState({token : response.data.token, is_login : true})
-            self.props.history.push("/")               
+            // self.props.history.push("/")               
         })
         .catch(function(error){
             store.setState({isLoading: false})
@@ -323,7 +319,7 @@ export const actions = store => ({
             method: "get",
             url: "https://cari-nama-domain-anda.site/review"
           };
-          const self = this
+        //   const self = this
           await axios(req)
           .then(function(response){
                 store.setState({
@@ -349,7 +345,7 @@ export const actions = store => ({
             method: "get",
             url: "https://cari-nama-domain-anda.site/public/product?p=1&rp=4"
           };
-          const self = this
+        //   const self = this
           await axios(req)
           .then(function(response){
               console.log("ini dataaaaanyaaaaa",response.data)
@@ -367,7 +363,7 @@ export const actions = store => ({
             method: "get",
             url: "https://cari-nama-domain-anda.site/public/product"
             };
-            const self = this
+            // const self = this
             await axios(req)
             .then(function(response){
                 console.log("ini dataaaaanyaaaaa",response.data)
@@ -388,7 +384,7 @@ export const actions = store => ({
                 Authorization: "Bearer " + localStorage.getItem("token")
                 }
             };
-            const self = this
+            // const self = this
             await axios(req)
             .then(function(response){
                 console.log("ini data Cart",response.data)
@@ -415,7 +411,7 @@ export const actions = store => ({
                 Authorization: "Bearer " + localStorage.getItem("token")
                 }
             };
-            const self = this
+            // const self = this
             await axios(req)
             .then(function(response){
                 console.log("ini data Cartdetail",response.data)
@@ -441,7 +437,7 @@ export const actions = store => ({
                 }
             };
             console.log()
-            const self = this
+            // const self = this
             await axios(req)
             .then(function(response){
                 console.log("id === ", response.data.id)
@@ -463,7 +459,7 @@ export const actions = store => ({
             },
             data: mydata
         };
-        const self = this
+        // const self = this
         await axios(req)
         .then(function(response){
             console.log("Add Transacsi sukses");
@@ -484,7 +480,7 @@ export const actions = store => ({
                 Authorization: "Bearer " + localStorage.getItem("token")
                 }
             };
-            const self = this
+            // const self = this
             await axios(req)
             .then(function(response){
                 console.log("ini transaksinya",response.data)
@@ -578,7 +574,7 @@ export const actions = store => ({
             method: "get",
             url:`https://cari-nama-domain-anda.site/public/product?taste=${state.category_taste}&halal=${state.halalStatus}`
             };
-            const self = this
+            // const self = this
             await axios(req)
             .then(function(response){
                 console.log("ini transaksinya",response.data)
@@ -599,7 +595,7 @@ export const actions = store => ({
             method: "get",
             url:`https://cari-nama-domain-anda.site/public/product/search?keyword=${state.search}`
             };
-            const self = this
+            // const self = this
             await axios(req)
             .then(function(response){
                 console.log("ini transaksinya",response.data)

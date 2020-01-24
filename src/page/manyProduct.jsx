@@ -1,14 +1,14 @@
 //import plugin
 import React from 'react';
-import { Link } from "react-router-dom";
-import {store,actions} from '../store'
+// import { Link } from "react-router-dom";
+import {actions} from '../store'
 import {withRouter} from 'react-router-dom'
 import {connect} from 'unistore/react'
 
 //import style
 import "../style/nomatch.css"
 import Navbar from '../component/navbar';
-import Category from '../component/navbarCategory'
+// import Category from '../component/navbarCategory'
 import Search from '../component/search';
 import ListAllProduct from '../component/listAllProduct'
 

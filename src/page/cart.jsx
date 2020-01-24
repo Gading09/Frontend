@@ -8,8 +8,8 @@ import {connect} from 'unistore/react'
 //import style
 import "../style/cart.css"
 import Navbar from '../component/navbar';
-import Category from '../component/navbarCategory'
-import Search from '../component/search';
+// import Category from '../component/navbarCategory'
+// import Search from '../component/search';
 import CartFromSeller from '../component/cartFromSeller';
 
 // untuk mengembalikan respon saat tidak ditemukan page yang sesuai
@@ -52,7 +52,7 @@ class Cart extends React.Component{
         console.log("Tolong ",this.props.cart)
         console.log("cartProduct ",this.props.cartProduct)
         const ListCarts = this.props.cartProduct.map((carts,key) => {
-            const cart = this.props.cart
+            // const cart = this.props.cart
             console.log("Cart di LOOPING", carts)
             return(
                 <CartFromSeller

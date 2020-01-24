@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/bootstrap.min.css';
-import axios from "axios";
-import {store, actions} from '../store';
+// import axios from "axios";
+import {actions} from '../store';
 import {withRouter, Redirect} from 'react-router-dom';
 import {connect} from 'unistore/react';
 import "../style/profile.css"
@@ -16,8 +16,8 @@ class Profile extends React.Component{
         const address = localStorage.getItem("address");
         const email = localStorage.getItem("email");
         const city = localStorage.getItem("city");
-        const image = localStorage.getItem("image");
-        const shop_name = localStorage.getItem("shop_name");
+        // const image = localStorage.getItem("image");
+        // const shop_name = localStorage.getItem("shop_name");
 
         if (token!==null){
             return(

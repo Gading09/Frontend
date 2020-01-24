@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import "../style/bootstrap.min.css";
 import "../style/colousel.css"
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 class Colousel extends Component{
     render(){

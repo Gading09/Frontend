@@ -3,11 +3,11 @@ import React, {Component} from 'react';
 import "../style/bootstrap.min.css";
 import { Link } from "react-router-dom";
 // import Search from './search';
-import { actions, store } from "../store";
+import { actions } from "../store";
 import { withRouter } from "react-router-dom";
 import { connect } from "unistore/react";
-import ModalSignIn from '../component/modalSignIn'
-import ModalSignUp from '../component/modalSignUp'
+// import ModalSignIn from '../component/modalSignIn'
+// import ModalSignUp from '../component/modalSignUp'
 import "../style/navbar.css"
 
 class SemiNavbar extends Component{
@@ -23,7 +23,7 @@ class SemiNavbar extends Component{
                 <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item" style={{paddingTop:"2px"}}>
-                        <Link to="/listproduct" class="nav-link" class="lihat_semua">Lihat Semua</Link>
+                        <Link to="/listproduct" class="nav-link lihat_semua">Lihat Semua</Link>
                     </li>
                 </ul>
                 </div>

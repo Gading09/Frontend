@@ -14,10 +14,10 @@ class ThankYou extends React.Component{
                 <p class="lead"><strong>Please check your email</strong> for further instructions on how to complete your account setup.</p>
                 <hr/>
                 <p>
-                    Having trouble? <a href="#">Contact us</a>
+                    Having trouble? <Link to="/" class="btn btn-primary btn-sm" role="button">Contact us</Link>
                 </p>
                 <p class="lead">
-                    <Link to="/"><a class="btn btn-primary btn-sm" href="" role="button">Continue to homepage</a></Link>
+                    <Link to="/" class="btn btn-primary btn-sm" role="button">Continue to homepage</Link>
                 </p>
             </div>
         )
