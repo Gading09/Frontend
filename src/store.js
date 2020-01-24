@@ -27,7 +27,7 @@ const initialState = {
     //login
     usename : "",
     password: "",
-    //
+    //profile
     image_user: "",
     name_user: "",
     rating_user:"",
