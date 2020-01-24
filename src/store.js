@@ -79,7 +79,6 @@ export const actions = store => ({
                                     username : state.userNameInput,
                                     password : state.userPasswordInput})
                     // self.props.history.push("/")              
-                    alert("login success")
                 }
             })
             .catch(function(error){

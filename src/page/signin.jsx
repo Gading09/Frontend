@@ -2,6 +2,8 @@ import React from 'react';
 import {store,actions} from '../store'
 import {withRouter} from 'react-router-dom'
 import {connect} from 'unistore/react'
+import './style/bootstrap.min.css';
+import './style/signIn.css'
 
 class SignIn extends React.Component{
     changeInput = e => {
