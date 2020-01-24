@@ -1,6 +1,5 @@
 import React from 'react'
 import SignIn from '../page/signin'
-import './style/bootstrap.min.css';
 
 class ModalSignIn extends React.Component{
     render(){
